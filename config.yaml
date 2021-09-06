@@ -1,6 +1,6 @@
 baseURL: https://edoardoferri-portfolio.netlify.app
 languageCode: en-us
-title: Edo;s website
+title: Edo's website
 theme: forty
 googleAnalytics: ''
 disqusShortname: ''
@@ -82,9 +82,9 @@ params:
     enable: yes
     showcase:
       - image: pic01.jpg
-        subtitle: Ipsum Dolor Sit Amet
-        title: Aliquam
-        url: blogs/aliquam
+        subtitle: I like coding
+        title: About me
+        url: blogs/edoardo
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
         title: Tempus
