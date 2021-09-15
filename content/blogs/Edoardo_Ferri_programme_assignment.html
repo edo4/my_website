@@ -11,7 +11,7 @@ draft: false
 image: pic07.jpg
 keywords: ""
 slug: edoardo
-title: Aliquam
+title: About Me
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
@@ -46,7 +46,7 @@ title: Aliquam
 ## $ pop       &lt;int&gt; 8425333, 9240934, 10267083, 11537966, 13079460, 14880372, 12…
 ## $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.1134, …</code></pre>
 <pre class="r"><code>head(gapminder, 20) # look at the first 20 rows of the dataframe</code></pre>
-<pre><code>## # A tibble: 20 x 6
+<pre><code>## # A tibble: 20 × 6
 ##    country     continent  year lifeExp      pop gdpPercap
 ##    &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
 ##  1 Afghanistan Asia       1952    28.8  8425333      779.
@@ -201,7 +201,7 @@ animal_rescue &lt;- read_csv(url,
 glimpse(animal_rescue)</code></pre>
 <pre><code>## Rows: 7,772
 ## Columns: 31
-## $ incident_number               &lt;dbl&gt; 139091, 275091, 2075091, 2872091, 355309…
+## $ incident_number               &lt;chr&gt; &quot;139091&quot;, &quot;275091&quot;, &quot;2075091&quot;, &quot;2872091&quot;…
 ## $ date_time_of_call             &lt;chr&gt; &quot;01/01/2009 03:01&quot;, &quot;01/01/2009 08:51&quot;, …
 ## $ cal_year                      &lt;dbl&gt; 2009, 2009, 2009, 2009, 2009, 2009, 2009…
 ## $ fin_year                      &lt;chr&gt; &quot;2008/09&quot;, &quot;2008/09&quot;, &quot;2008/09&quot;, &quot;2008/0…
@@ -236,7 +236,7 @@ glimpse(animal_rescue)</code></pre>
 <pre class="r"><code>animal_rescue %&gt;% 
   dplyr::group_by(cal_year) %&gt;% 
   summarise(count=n())</code></pre>
-<pre><code>## # A tibble: 13 x 2
+<pre><code>## # A tibble: 13 × 2
 ##    cal_year count
 ##       &lt;dbl&gt; &lt;int&gt;
 ##  1     2009   568
@@ -254,7 +254,7 @@ glimpse(animal_rescue)</code></pre>
 ## 13     2021   547</code></pre>
 <pre class="r"><code>animal_rescue %&gt;% 
   count(cal_year, name=&quot;count&quot;)</code></pre>
-<pre><code>## # A tibble: 13 x 2
+<pre><code>## # A tibble: 13 × 2
 ##    cal_year count
 ##       &lt;dbl&gt; &lt;int&gt;
 ##  1     2009   568
@@ -283,7 +283,7 @@ glimpse(animal_rescue)</code></pre>
   # arrange() sorts the data by percent. Since the default sorting is min to max and we would like to see it sorted
   # in descending order (max to min), we use arrange(desc()) 
   arrange(desc(percent))</code></pre>
-<pre><code>## # A tibble: 28 x 3
+<pre><code>## # A tibble: 28 × 3
 ##    animal_group_parent              count percent
 ##    &lt;chr&gt;                            &lt;int&gt;   &lt;dbl&gt;
 ##  1 Cat                               3736   48.1 
@@ -304,7 +304,7 @@ glimpse(animal_rescue)</code></pre>
   # and &#39;sort=TRUE&#39; will sort them from max to min
   count(animal_group_parent, name=&quot;count&quot;, sort=TRUE) %&gt;% 
   mutate(percent = round(100*count/sum(count),2))</code></pre>
-<pre><code>## # A tibble: 28 x 3
+<pre><code>## # A tibble: 28 × 3
 ##    animal_group_parent              count percent
 ##    &lt;chr&gt;                            &lt;int&gt;   &lt;dbl&gt;
 ##  1 Cat                               3736   48.1 
@@ -361,7 +361,7 @@ typeof(animal_rescue$incident_notional_cost)</code></pre>
   
   # sort the resulting data in descending order. You choose whether to sort by count or mean cost.
   arrange(desc(mean_incident_cost))</code></pre>
-<pre><code>## # A tibble: 16 x 7
+<pre><code>## # A tibble: 16 × 7
 ##    animal_group_parent      mean_incident_co… median_incident_… sd_incident_cost
 ##    &lt;chr&gt;                                &lt;dbl&gt;             &lt;dbl&gt;            &lt;dbl&gt;
 ##  1 Horse                                 740.               596            541. 

@@ -89,13 +89,13 @@ params:
         title: Data Science
         url: blogs/tempus
       - image: pic03.jpg
-        subtitle: Lorem Etiam Nullam
+        subtitle: Publications
         title: Finance
         url: blogs/magna
       - image: pic04.jpg
-        subtitle: Nisl Sed Aliquam
-        title: Ipsum
-        url: blogs/ipsum
+        subtitle: My Professional life
+        title: CV
+        url: blogs/CV
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
         title: Consequat
