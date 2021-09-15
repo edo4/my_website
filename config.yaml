@@ -8,8 +8,7 @@ params:
   banner:
     buttonText: Get Started
     subtitle: |-
-      A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
-      AND RELEASED UNDER THE CREATIVE COMMONS.
+      Analytics and Management student passionate about data science and finance
     title: Hi, my name is Edoardo Ferri
   blog: {}
   contact:
@@ -25,8 +24,8 @@ params:
         title: Email
     enable: yes
     phone:
-      - phone: (000) 000-0000 x1234
-        title: Phone
+      - phone: (+44) 7900 088301
+        title: Mobile
   custom_css: []
   custom_js: []
   description: Your description
@@ -56,7 +55,7 @@ params:
         url: https://www.github.com/edo4
       - icon: fa-linkedin
         label: LinkedIn
-        url: https://www.linkedin.com
+        url: https://www.linkedin.com/in/edoardo-ferri-32396214b/
   image: ''
   name: Your name
   navigation:
@@ -87,11 +86,11 @@ params:
         url: blogs/edoardo
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
-        title: Tempus
+        title: Data Science
         url: blogs/tempus
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
-        title: Magna
+        title: Finance
         url: blogs/magna
       - image: pic04.jpg
         subtitle: Nisl Sed Aliquam
