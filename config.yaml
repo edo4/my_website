@@ -80,22 +80,22 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: pic01.jpg
+      - image: milan.jpeg
         subtitle: I like coding
         title: About me
         url: blogs/edoardo
-      - image: pic02.jpg
-        subtitle: Feugiat Amet Tempus
+      - image: datascience.jpeg
+        subtitle: My projects
         title: Data Science
         url: blogs/tempus
-      - image: pic03.jpg
+      - image: finance.jpeg
         subtitle: Publications
         title: Finance
         url: blogs/magna
       - image: pic04.jpg
         subtitle: My Professional life
         title: CV
-        url: blogs/CV
+        url: blogs/cv
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
         title: Consequat
