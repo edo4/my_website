@@ -17,4 +17,8 @@ Here is my most updated CV, uploaded on 15/09/2021. You can click [here](cv_webs
 
 The languages I speak fluently (English, Italian and French) give me great coverage of the world!
 
+```{r pic1, echo = FALSE, out.width="60%"}
+knitr::include_graphics("/img/languages.png", error = FALSE)
+```
+
 ![](/Users/Edoardo/Desktop/LBS R/my_website/static/img/blogs/languages.png)
