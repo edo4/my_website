@@ -17,8 +17,7 @@ Here is a [link](thesis_website.pdf) to my bachelor's thesis on M&A activity.
 
 CEOs background’s, experiences and characteristics shape them into the person they are, and so play a role in their decision making process. On top of this, M&A activity has become increasingly important in the strategic role of firms, and investigating how these decisions are made by the most important players is crucial. Hence I investigated the impact that tenure, education and being a shareholder or a member of the founding family had on a CEO’s propensity to engage in acquisitions. The results showed that an education in economics and being an owner-manager both have a positive impact on acquisition activity, while tenure appears to be insignificant.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-![R Markdown image](https://www.dataquest.io/wp-content/uploads/2020/06/r-markdown-1536x976.jpg)
+# Other Stuff
+ I am also currently managing my parent's portfolio and have an active interest in bonds and equity derivatives pricing.
+ 
+![](https://www.dataquest.io/wp-content/uploads/2020/06/r-markdown-1536x976.jpg)

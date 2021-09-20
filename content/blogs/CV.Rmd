@@ -13,10 +13,8 @@ title: Professional Life
 
 Here is my most updated CV, uploaded on 15/09/2021. You can click [here](cv_website.pdf) to download it.
 
-![CV](CV.png)
-```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
-library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
-library(gapminder)  # gapminder dataset
-library(here)
-library(janitor)
-```
+![](/Users/Edoardo/Desktop/LBS R/my_website/static/img/blogs/CV.png)
+
+The languages I speak fluently (English, Italian and French) give me great coverage of the world!
+
+![](/Users/Edoardo/Desktop/LBS R/my_website/static/img/blogs/languages.png)
