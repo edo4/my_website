@@ -21,10 +21,6 @@ library(here)
 library(janitor)
 ```
 
-The goal is to test your software installation, to demonstrate competency in Markdown, and in the basics of `ggplot`.
-
-> Please delete all the intro text I wrote from line 22 to line 69 and start writing your short biography after this blockquote.
-
 # Story of my life
 I was born in Belgium in may 2001 from italian parents. I then moved to Switewrland and later on to China. I finally completed my bachelor's at Bocconi univeristy in milan. To summarize, my education went a bit like this:
 

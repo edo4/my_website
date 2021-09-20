@@ -5,14 +5,15 @@ categories:
 date: "2017-10-31T21:28:43-05:00"
 description: ""
 draft: false
-image: CV.png
+image: 
 keywords: ""
 slug: cv
-title: professional_life
+title: Professional Life
 ---
 
-Here is my most updated CV, uploaded on 15/09/2021
+Here is my most updated CV, uploaded on 15/09/2021. You can click [here](cv_website.pdf) to download it.
 
+![CV](CV.png)
 ```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
 library(gapminder)  # gapminder dataset

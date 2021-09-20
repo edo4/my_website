@@ -87,11 +87,11 @@ params:
       - image: datascience.jpeg
         subtitle: My projects
         title: Data Science
-        url: blogs/tempus
+        url: blogs/data
       - image: finance.jpeg
         subtitle: Publications
         title: Finance
-        url: blogs/magna
+        url: blogs/finance
       - image: pic04.jpg
         subtitle: My Professional life
         title: CV
