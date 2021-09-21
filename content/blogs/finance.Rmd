@@ -3,15 +3,15 @@ categories:
 - ""
 - ""
 date: "2017-10-31T22:26:09-05:00"
-description: Lorem Etiam Nullam
+description: 
 draft: false
-image: lbs.jpeg
+image: stocks.jpeg
 keywords: ""
 slug: finance
 title: Finance
 ---
 
-Here is a [link](thesis_website.pdf) to my bachelor's thesis on M&A activity.
+Here is a link to [download](/img/thesis_website.pdf) to my bachelor's thesis on M&A activity.
 
 # Abstract
 
@@ -19,29 +19,29 @@ CEOs background’s, experiences and characteristics shape them into the person 
 
 # Other Stuff
  I am also currently managing my parent's portfolio and have an active interest in bonds and equity derivatives pricing.
- This is the stock I am currently interested in:
+ The stock I am currently interested in is Airbus:
 
-```{r}
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
 library(quantmod)
 library(ggplot2)
 library(magrittr)
 library(broom)
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 start = as.Date("2018-01-01") 
 end = as.Date("2021-09-20")
 getSymbols(c("EADSY", "BOE", "^GSPC", "WTI", "CPI"), src = "yahoo", from = start, to = end)
 ```
 
-```{r}
+```{r,warning=FALSE, message=FALSE}
 stocks = as.xts(data.frame(A = EADSY[, "EADSY.Adjusted"],
 B = BOE[, "BOE.Adjusted"], C = GSPC[,"GSPC.Adjusted"], D = WTI[, "WTI.Adjusted"], E = CPI[, "CPI.Adjusted"]))
 names(stocks) = c("Airbus", "Boeing","S&P 500", "Crude Oil", "CPI")
 index(stocks) = as.Date(index(stocks))
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 stocks_graph = tidy(stocks) %>% 
   
   ggplot(aes(x=index,y=value, color=series)) + 
@@ -56,16 +56,28 @@ stocks_graph = tidy(stocks) %>%
   scale_color_manual(values = c("Red", "Black", "DarkBlue","Orange", "Blue"))
 stocks_graph
 ```
+
+
 The reason I find Airbus so interesting is because it has not yet fully experienced the recovery.
 Being mainly a European equity, it did not have the benefits of the federal reserve and massive bailouts 
 that were taking place in the US markets. Here are some of the pain points I have come across in my research of this company:
 
 1. Increasing demographic and economic growth
 2. People wanting to get back to travelling
-3. Decreasing oil prices (about 10usd ppb from before covid) -> strong negative correlation between the ppb and airline stock price
+3. Decreasing oil prices (about 10 USD PPB from before COVID) -> strong negative correlation between the ppb and airline stock price
 4. 4% projected traffic growth over the next 20 years
 5. 39 200 projected new aircraft to be sold in 20 years
 6. Continuously expanding is the aerospace and space exploration sector which is constantly gaining momentum
 7. Defense sector also important part of their business
 8. Traded in euros so resistant to upcoming inflation in us equity markets
 
+Here are also some projects I worked on as an equity research analyst:
+
+```{r pic1, echo = FALSE, out.width="80%"}
+knitr::include_graphics("/img/crcc.pdf", error = FALSE)
+```
+
+
+```{r pic1, echo = FALSE, out.width="80%"}
+knitr::include_graphics("/img/trade_war.pdf", error = FALSE)
+```

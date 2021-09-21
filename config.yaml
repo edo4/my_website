@@ -92,7 +92,7 @@ params:
         subtitle: Publications
         title: Finance
         url: blogs/finance
-      - image: pic04.jpg
+      - image: me.jpeg
         subtitle: My Professional life
         title: CV
         url: blogs/cv
@@ -108,6 +108,7 @@ params:
     buttonText: Get Started
     enable: yes
     subtitle: "I am currently looking for summer or long term internships in roles that involve data science and finance. 
-    Hence roles in risk, trading, structuring and asset management are of great interest to me."
-    title: Massa libero
+    Hence roles in risk, trading, structuring and asset management are of great interest to me. I am higly analytical and quantitative
+    with practical experience in programming and banking, on top of in depth theoretical knowledge of derivatives pricing."
+    title: Interested in working with me?
     url: blogs

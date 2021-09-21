@@ -5,7 +5,7 @@ categories:
 date: "2017-10-31T22:26:09-05:00"
 description: Lorem Etiam Nullam
 draft: false
-image: lbs.jpeg
+image: stocks.jpeg
 keywords: ""
 slug: finance
 title: Finance
@@ -22,33 +22,10 @@ title: Finance
 <div id="other-stuff" class="section level1">
 <h1>Other Stuff</h1>
 <p>I am also currently managing my parent’s portfolio and have an active interest in bonds and equity derivatives pricing.
-This is the stock I am currently interested in:</p>
-<pre class="r"><code>library(quantmod)</code></pre>
-<pre><code>## Loading required package: xts</code></pre>
-<pre><code>## Loading required package: zoo</code></pre>
-<pre><code>## 
-## Attaching package: &#39;zoo&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     as.Date, as.Date.numeric</code></pre>
-<pre><code>## Loading required package: TTR</code></pre>
-<pre><code>## Registered S3 method overwritten by &#39;quantmod&#39;:
-##   method            from
-##   as.zoo.data.frame zoo</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(magrittr)
-library(broom)</code></pre>
+The stock I am currently interested in is Airbus:</p>
 <pre class="r"><code>start = as.Date(&quot;2018-01-01&quot;) 
 end = as.Date(&quot;2021-09-20&quot;)
 getSymbols(c(&quot;EADSY&quot;, &quot;BOE&quot;, &quot;^GSPC&quot;, &quot;WTI&quot;, &quot;CPI&quot;), src = &quot;yahoo&quot;, from = start, to = end)</code></pre>
-<pre><code>## &#39;getSymbols&#39; currently uses auto.assign=TRUE by default, but will
-## use auto.assign=FALSE in 0.5-0. You will still be able to use
-## &#39;loadSymbols&#39; to automatically load data. getOption(&quot;getSymbols.env&quot;)
-## and getOption(&quot;getSymbols.auto.assign&quot;) will still be checked for
-## alternate defaults.
-## 
-## This message is shown once per session and may be disabled by setting 
-## options(&quot;getSymbols.warning4.0&quot;=FALSE). See ?getSymbols for details.</code></pre>
 <pre><code>## [1] &quot;EADSY&quot; &quot;BOE&quot;   &quot;^GSPC&quot; &quot;WTI&quot;   &quot;CPI&quot;</code></pre>
 <pre class="r"><code>stocks = as.xts(data.frame(A = EADSY[, &quot;EADSY.Adjusted&quot;],
 B = BOE[, &quot;BOE.Adjusted&quot;], C = GSPC[,&quot;GSPC.Adjusted&quot;], D = WTI[, &quot;WTI.Adjusted&quot;], E = CPI[, &quot;CPI.Adjusted&quot;]))
@@ -67,14 +44,14 @@ index(stocks) = as.Date(index(stocks))</code></pre>
   xlab(&quot;Date&quot;) + ylab(&quot;Price&quot;) +
   scale_color_manual(values = c(&quot;Red&quot;, &quot;Black&quot;, &quot;DarkBlue&quot;,&quot;Orange&quot;, &quot;Blue&quot;))
 stocks_graph</code></pre>
-<p><img src="/blogs/finance_files/figure-html/unnamed-chunk-4-1.png" width="672" />
-The reason I find Airbus so interesting is because it has not yet fully experienced the recovery.
+<p><img src="/blogs/finance_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>The reason I find Airbus so interesting is because it has not yet fully experienced the recovery.
 Being mainly a European equity, it did not have the benefits of the federal reserve and massive bailouts
 that were taking place in the US markets. Here are some of the pain points I have come across in my research of this company:</p>
 <ol style="list-style-type: decimal">
 <li>Increasing demographic and economic growth</li>
 <li>People wanting to get back to travelling</li>
-<li>Decreasing oil prices (about 10usd ppb from before covid) -&gt; strong negative correlation between the ppb and airline stock price</li>
+<li>Decreasing oil prices (about 10 USD PPB from before COVID) -&gt; strong negative correlation between the ppb and airline stock price</li>
 <li>4% projected traffic growth over the next 20 years</li>
 <li>39 200 projected new aircraft to be sold in 20 years</li>
 <li>Continuously expanding is the aerospace and space exploration sector which is constantly gaining momentum</li>

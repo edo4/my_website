@@ -11,14 +11,14 @@ slug: cv
 title: Professional Life
 ---
 
-Here is my most updated CV, uploaded on 15/09/2021. You can click [here](cv_website.pdf) to download it.
+Here is my most updated CV, uploaded on 15/09/2021
 
-![](/Users/Edoardo/Desktop/LBS R/my_website/static/img/blogs/CV.png)
+```{r pic1, echo = FALSE, out.width="90%"}
+knitr::include_graphics("/img/cv_website.pdf", error = FALSE)
+```
 
 The languages I speak fluently (English, Italian and French) give me great coverage of the world!
 
-```{r pic1, echo = FALSE, out.width="60%"}
+```{r pic2, echo = FALSE, out.width="60%"}
 knitr::include_graphics("/img/languages.png", error = FALSE)
 ```
-
-![](/Users/Edoardo/Desktop/LBS R/my_website/static/img/blogs/languages.png)
